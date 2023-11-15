@@ -2,7 +2,7 @@ from aiogram import Dispatcher, types, Bot, executor
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 
-API_TOKEN = '6978869260:AAHXcvyveNS0T9hcEXWRhe12kgrS5zz4S_A'
+API_TOKEN = ''
 bot = Bot(API_TOKEN)
 dp = Dispatcher(bot)
 
@@ -171,7 +171,7 @@ https://www.instagram.com/sippy.sh0p/''', parse_mode='HTML')
 # function for mailing
 @dp.message_handler(commands=['send_all'])
 async def start_massege(message: types.Message):
-    if message.from_user.id == 2095893055:
+    if message.from_user.id == :
         user_list_read = open('database.txt', 'r')
         for i in user_list_read:
             await bot.send_message(chat_id=i, text='TEST рассылки')
